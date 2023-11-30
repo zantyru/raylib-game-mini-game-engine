@@ -3,24 +3,21 @@
 #define __APPLICATION_HPP__
 namespace Gamengi
 {
-	template<class T>
 	class Application
 	{
 	public:
 		Application(const Application& other) = delete;
 		Application& operator=(const Application& other) = delete;
+		virtual ~Application();
 		
-		static T& GetInstance();
 		void Run();
 
 	protected:
-		struct _Token {};
-
 		Application();
 
-		virtual void AcquireResources();
-		virtual void StartMainLoop();
-		virtual void ReleaseResources();
+		virtual void AcquireResources() = 0;
+		virtual void StartMainLoop() = 0;
+		virtual void ReleaseResources() = 0;
 	};
 }
 #endif // __APPLICATION_HPP__

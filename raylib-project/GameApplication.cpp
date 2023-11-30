@@ -4,9 +4,6 @@
 
 namespace Gamengi
 {
-	GameApplication::GameApplication(Application<GameApplication>::_Token token)
-	{ }
-
 	void GameApplication::AcquireResources()
 	{
 		::InitWindow(640, 480, "Main Window");

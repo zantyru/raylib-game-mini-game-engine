@@ -3,7 +3,8 @@
 
 int main()
 {	
-	Gamengi::GameApplication::GetInstance();
+	Gamengi::GameApplication game;
+	game.Run();
 
 	return 0;
 }

@@ -9,11 +9,9 @@
 
 namespace Gamengi
 {
-	class GameApplication final : public Application<GameApplication>
+	class GameApplication final : public Application
 	{
 	public:
-		GameApplication(Application<GameApplication>::_Token token);
-
 		virtual void AcquireResources() override;
 		virtual void StartMainLoop() override;
 		virtual void ReleaseResources() override;
