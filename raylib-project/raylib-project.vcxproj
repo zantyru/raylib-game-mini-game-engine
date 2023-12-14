@@ -153,17 +153,20 @@
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
     <ClCompile Include="GameApplication.cpp" />
+    <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="TextureLibrary.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.hpp" />
     <ClInclude Include="GameApplication.hpp" />
+    <ClInclude Include="GameObject.hpp" />
     <ClInclude Include="IDrawable.hpp" />
     <ClInclude Include="IPositionable2D.hpp" />
     <ClInclude Include="IUpdatable.hpp" />
     <ClInclude Include="Library.hpp" />
     <ClInclude Include="Node.hpp" />
+    <ClInclude Include="SceneLayer.hpp" />
     <ClInclude Include="TextureLibrary.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
