@@ -13,6 +13,7 @@ namespace Gamengi
 	{
 	public:
 		using ID = size_t;
+		using Ptr = std::shared_ptr<GameObject>;
 
 		ID              GetID() const;
 		SceneLayer::Ptr GetParentSceneLayer() const;

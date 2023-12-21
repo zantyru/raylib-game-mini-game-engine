@@ -3,6 +3,7 @@
 #define __I_POSITIONABLE_HPP__
 
 
+#include <memory>
 #include "raylib.h"
 
 
@@ -11,6 +12,8 @@ namespace Gamengi
 	class IPositionable2D
 	{
 	public:
+		using Ptr = std::shared_ptr<IPositionable2D>;
+
 		virtual ~IPositionable2D() {}
 
 		virtual void SetPosition(::Vector2 position) = 0;

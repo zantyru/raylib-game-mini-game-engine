@@ -155,6 +155,7 @@
     <ClCompile Include="GameApplication.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="SceneLayer.cpp" />
     <ClCompile Include="TextureLibrary.cpp" />
   </ItemGroup>
   <ItemGroup>
